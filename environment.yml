@@ -1,0 +1,20 @@
+name: esm_phf20_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - biopython
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+      - transformers  # Hugging Face transformers for esm2_t12_35M_UR50D
+      - accelerate    # Required for efficient Hugging Face model execution
+      - mdtraj        # Used in downstream structural evaluation
+
